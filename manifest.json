@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Easy Move",
+  "description": "Move emails with hotkey",
+  "version": "0.1",
+  "author": "Roman Vershinin",
+  "applications": {
+    "gecko": {
+      "id": "easymove@roman.vershinin",
+      "strict_min_version": "87.0"
+    }
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Easy Move"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  },
+  "permissions": [
+    "accountsRead",
+    "messagesRead",
+    "messagesMove"
+  ]
+}
